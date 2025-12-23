@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Soar | Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/logo.png" alt="Logo" />
+                    <span class="fw-bold ms-2" style="font-size: 0.9rem">LOCAL SOAR</span>
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guide.html">Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hot.html">Hot</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <span class="me-3 d-none d-md-inline">Search</span>
+                    <button class="menu-trigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="index-hero" >
+            <div class="container">
+                <h1 class="display-1">Explore Malaysia</h1>
+                <p>Discover hidden gems and local secrets across the peninsula.</p>
+                <a href="guide.html" class="btn btn-warning btn-lg mt-4 px-5 fw-bold">Start Exploring</a>
+            </div>
+        </header>
+
+        <section class="bg-cream">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <h2 class="underline-head">Kelantan</h2>
+                        <p class="fs-5">
+                            Kelantan is rich in traditional Malay culture, arts, and strong Islamic values.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="image/Index_kelantan.jpg" class="img-main" alt="Kelantan" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-cream border-top border-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="row g-2">
+                            <div class="col-6"><img src="image/Index_penang1.jpg" class="img-penang-lg" /></div>
+                            <div class="col-6"><img src="image/Index_penang2.jpg" class="img-penang-lg" /></div>
+                            <div class="col-6"><img src="image/index_penang3.jpg" class="img-penang-lg" /></div>
+                            <div class="col-6"><img src="image/index_penang4.jpg" class="img-penang-lg" /></div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-5 ps-md-5">
+                        <h2 class="underline-head">Penang</h2>
+                        <p class="fs-5">Famous for street food, architecture, and cultural diversity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-cream border-top border-white">
+            <div class="container text-center">
+                <h2 class="underline-head">Kuala Lumpur</h2>
+                <div class="row g-4">
+                    <div class="col-md-4"><img src="image/index_KL1.jpg" class="img-kl" /></div>
+                    <div class="col-md-4"><img src="image/Index_KL2.jpg" class="img-kl" /></div>
+                    <div class="col-md-4"><img src="image/index_KL3.jpg" class="img-kl" /></div>
+                </div>
+                <p class="mt-4 fs-5">The capital city, known for its skyline and cultural mix.</p>
+            </div>
+        </section>
+
+        <footer class="footer-custom">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="image/logo.png" alt="Logo" width="100" />
+                        <div class="fw-bold mt-2">LOCAL SOAR</div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="hot.html">Hot</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fw-bold">Get to know us in :</p>
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <img src="image/instagram_1077042.png" width="40" alt="Instagram" />
+                            <img src="image/facebook_508225.png" width="40" alt="Facebook" />
+                            <img src="image/youtube_299384.png" width="40" alt="YouTube" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarMenu">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+                <ul class="more-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hot.html">Hot</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

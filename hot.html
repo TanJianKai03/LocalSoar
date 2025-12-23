@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Soar | Hot</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/logo.png" alt="Logo" />
+                    <span class="fw-bold ms-2" style="font-size: 0.9rem">LOCAL SOAR</span>
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guide.html">Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hot.html">Hot</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <span class="me-3 d-none d-md-inline">Search</span>
+                    <button class="menu-trigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <header
+            class="article-hero"
+            style="
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                    url(&quot;image/Hot_headers.jpg&quot;);
+            ">
+            <div class="container">
+                <h1>Hot</h1>
+            </div>
+        </header>
+
+        <main class="bg-cream py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1 class="underline-head display-3">Hot</h1>
+                </div>
+
+                <div class="hot-list-container">
+                    <a href="guide-details.html">
+                    <div class="hot-list-item">
+                        <div class="hot-list-img">
+                            <img src="image/Index_kelantan.jpg" alt="Destination 1" />
+                        </div>
+                        
+                        <div class="hot-list-content">
+                            <h2 class="hot-list-title">Kelantan</h2>
+                            <p class="hot-list-desc">
+                                Visitors can enjoy local crafts, vibrant markets, traditional food, and beautiful
+                                beaches like Pantai Cahaya Bulan, all while experiencing Malaysia’s cultural roots.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class="hot-list-item">
+                        <div class="hot-list-img">
+                            <img src="image/Index_penang2.jpg" alt="Destination 2" />
+                        </div>
+                        <div class="hot-list-content">
+                            <h2 class="hot-list-title">George Town, Penang</h2>
+                            <p class="hot-list-desc">
+                                A vibrant mix of food, heritage, and street art. Penang is famous for its UNESCO-listed
+                                George Town, world-class hawker food, and charming old streets.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <a href="guide-details1.html">
+                    <div class="hot-list-item">
+                        <div class="hot-list-img">
+                            <img src="image/index_KL1.jpg" alt="Destination 3" />
+                        </div>
+                        <div class="hot-list-content">
+                            <h2 class="hot-list-title">Kuala Lumpur</h2>
+                            <p class="hot-list-desc">
+                                Malaysia’s modern capital, home to the iconic Petronas Twin Towers, exciting shopping
+                                malls, and lively nightlife. A top spot for city lovers.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-custom">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="image/logo.png" alt="Logo" width="100" />
+                        <div class="fw-bold mt-2">LOCAL SOAR</div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="hot.html">Hot</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fw-bold">Get to know us in :</p>
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <img src="image/instagram_1077042.png" width="40" alt="Instagram" />
+                            <img src="image/facebook_508225.png" width="40" alt="Facebook" />
+                            <img src="image/youtube_299384.png" width="40" alt="YouTube" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarMenu">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="more-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hot.html">Hot</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

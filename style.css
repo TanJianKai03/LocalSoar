@@ -1,0 +1,753 @@
+/* GLOBAL THEME COLORS */
+:root {
+    --bg-cream: #fff9d0; /* Signature Yellow Content */
+    --bg-blue: #d6e6ff; /* Signature Sidebar/Footer Blue */
+}
+
+/* BASE STYLES */
+body {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+.nav-link,
+.more-links a {
+    font-family: "Libre Baskerville", serif;
+}
+
+/* 1. FORCE NAVBAR HEIGHT */
+.navbar {
+    height: 85px !important; /* Forces the bar to be exactly 85px */
+    padding: 0 !important; /* Prevents Bootstrap from adding extra space */
+    background-color: white !important;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* 2. ALIGN THE CONTAINER */
+.navbar > .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 3. LOCK THE LOGO SIZE */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.navbar-brand img {
+    height: 45px !important; /* Force logo height */
+    width: auto; /* Keep proportions */
+}
+
+/* 4. LOCK THE LINKS */
+.navbar-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    line-height: 85px; /* Matches the navbar height exactly */
+    padding: 0 20px !important;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+/* HAMBURGER MENU ICON */
+.menu-trigger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("hero-kl.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* CONTENT BLOCKS */
+.bg-cream {
+    background-color: var(--bg-cream);
+    padding: 80px 0;
+}
+.underline-head {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* IMAGE GRID STYLES */
+.img-main {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.img-penang-lg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.img-penang-sm {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.img-kl {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* SIDEBAR (MORE PAGE) */
+.offcanvas {
+    background-color: var(--bg-blue) !important;
+    width: 300px !important;
+}
+.more-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.more-links li {
+    margin-bottom: 30px;
+}
+.more-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer-custom {
+    background-color: var(--bg-blue);
+    padding: 80px 0;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.footer-links li {
+    margin-bottom: 15px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Guide Grid Specifics */
+.guide-card {
+    position: relative;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+}
+
+.guide-img-container {
+    width: 80%; /* Takes up most of the width */
+    height: 250px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.guide-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.state-label {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 0; /* Aligns the label to the side like in the picture */
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the whole state block */
+.guide-card {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* The Image Box */
+.guide-img-container {
+    width: 100%;
+    height: 250px;
+    position: relative; /* Essential for the label to stick to it */
+    overflow: visible; /* Allows the label to "pop" out */
+}
+
+.guide-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* The Bold State Name (White Box) */
+.state-label {
+    position: absolute;
+    bottom: 20px;
+    right: -10px; /* Pops out slightly to the right */
+    background-color: white;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The descriptive words UNDER the photo */
+.state-desc {
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Specific Hot Page Styles from Hot.jpg */
+.hot-page-grid {
+    padding: 20px 0;
+}
+
+.hot-card {
+    background-color: white;
+    padding: 10px; /* This creates the white border around the image */
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-decoration: none !important;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+}
+
+.hot-card:hover {
+    transform: translateY(-5px);
+}
+
+.hot-img-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Adjusted to the vertical rectangle shape in Hot.jpg */
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.hot-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot-card-label {
+    margin-top: 12px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* Vertical Hot List Styles */
+.hot-list-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hot-list-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px; /* Spacing between top and bottom items */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    text-decoration: none !important;
+    display: flex; /* Flexbox for horizontal alignment within the vertical stack */
+    flex-direction: row;
+    transition: transform 0.3s ease;
+}
+
+.hot-list-item:hover {
+    transform: scale(1.02);
+}
+
+.hot-list-img {
+    width: 40%; /* Image on the left */
+    min-width: 150px;
+    height: 250px;
+}
+
+.hot-list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot-list-content {
+    width: 60%; /* Text on the right */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.hot-list-number {
+    font-weight: bold;
+    color: #ffcc00; /* Yellow highlight for ranking */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.hot-list-title {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hot-list-desc {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Mobile Responsive: Stack image on top of text for phones */
+@media (max-width: 768px) {
+    .hot-list-item {
+        flex-direction: column;
+    }
+    .hot-list-img {
+        width: 100%;
+        height: 200px;
+    }
+    .hot-list-content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* FAQ PAGE STYLES */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.faq-question {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question::before {
+    content: "Q:";
+    color: #ffcc00; /* Yellow highlight */
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.faq-answer {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+    padding-left: 32px;
+}
+
+/* ABOUT PAGE STYLES */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text-block {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-quote {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+    border-left: 4px solid #ffcc00;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* ABOUT PAGE - SPLIT LAYOUT */
+.about-row {
+    display: flex;
+    align-items: stretch;
+    min-height: 600px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-image-side {
+    width: 50%;
+    background: url("about-hero.jpg") center/cover no-repeat;
+    min-height: 400px;
+}
+
+.about-text-side {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.about-tagline {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Mobile Fix */
+@media (max-width: 992px) {
+    .about-row {
+        flex-direction: column;
+    }
+    .about-image-side,
+    .about-text-side {
+        width: 100%;
+    }
+    .about-text-side {
+        padding: 30px;
+    }
+}
+
+/* GUIDE DETAILS STYLES */
+.details-hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.details-hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7));
+}
+
+.details-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+}
+
+.spot-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.spot-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.spot-body {
+    padding: 20px;
+}
+
+.spot-title {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* --- GLOBAL SETTINGS --- */
+:root {
+    --bg-cream: #FFF9D0;  /* Signature Yellow */
+    --bg-footer: #D6E6FF; /* Signature Blue */
+}
+
+/* Forces scrollbar area so navbar doesn't jump left/right between pages */
+html { 
+    overflow-y: scroll; 
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: white; 
+    color: #333; 
+    margin: 0; 
+}
+
+h2, .nav-link, .underline-head { 
+    font-family: 'Libre Baskerville', serif; 
+}
+
+/* --- FIXED NAVBAR LOCK --- */
+.navbar { 
+    height: 85px !important; 
+    padding: 0 !important; 
+    background-color: white !important;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand img { 
+    height: 40px !important; 
+    width: auto; 
+}
+
+.nav-link { 
+    color: black !important; 
+    line-height: 85px; 
+    height: 85px;
+    padding: 0 20px !important;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #555 !important;
+}
+
+/* --- MAIN CONTENT --- */
+.details-container {
+    background-color: var(--bg-cream);
+    padding: 60px 0;
+}
+
+.underline-head {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+/* --- GRID STYLING --- */
+.grid-img {
+    width: 100%;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+}
+
+.item-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 30px; 
+}
+
+/* --- FOOTER STYLING --- */
+.footer-custom { 
+    background-color: var(--bg-footer); 
+    padding: 80px 0; 
+    border-top: 1px solid #c5d5ee; 
+}
+
+.footer-links { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.footer-links a { 
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 1.2rem; 
+    display: block; 
+    margin-bottom: 15px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ARTICLE PAGE STYLES */
+.article-hero {
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('beach-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.article-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    letter-spacing: 1px;
+}
+
+.content-area {
+    background-color: var(--bg-cream);
+    padding: 80px 0;
+    min-height: 500px;
+}
+
+.article-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #222;
+}
+
+.location-box {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+
+/* INDEX HERO SECTION */
+.index-hero {
+    height: 70vh; /* Covers 70% of the screen height */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/index_header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: adds a parallax scrolling effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.index-hero h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Makes text even clearer */
+}
+
+.index-hero p {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-box-img {
+    width: 100%;
+    height: 100%;       /* Makes image match the text height */
+    object-fit: cover;  /* Prevents the image from stretching */
+    display: block;
+}
+
+/* On mobile, stack them so the photo is on top */
+@media (max-width: 767px) {
+    .about-box-img {
+        height: 300px;  /* Fixed height for phone screens */
+    }
+}
+
